@@ -1,0 +1,27 @@
+name: langchain
+channels:
+  - conda-forge
+dependencies:
+  # --- Core runtime ---
+  - python=3.13
+  - pip
+  - setuptools
+  - wheel
+
+  # --- Tooling ---
+  - uv
+  - git
+  - curl
+
+  # --- Jupyter (dev convenience) ---
+  - jupyterlab
+  - ipykernel
+
+  # --- Graph visualization (LangGraph draw_png support) ---
+  - graphviz
+  - pygraphviz
+
+  # --- System deps (important for Chroma persistence / TLS) ---
+  - sqlite
+  - openssl
+  - ca-certificates
